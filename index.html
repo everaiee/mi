@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>欢迎来到我的个人主页</h1>
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系我</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>关于我</h2>
+        <p>你好！我是一名热爱编程和设计的开发者。这里是我的个人主页，展示我的项目和一些个人信息。</p>
+    </section>
+
+    <!-- <section id="projects">
+        <h2>项目</h2>
+        <ul>
+            <li><strong>项目1：</strong>描述项目1的内容。</li>
+            <li><strong>项目2：</strong>描述项目2的内容。</li>
+            <li><strong>项目3：</strong>描述项目3的内容。</li>
+        </ul>
+    </section> -->
+    <section id="projects">
+    <h2>项目</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+        <!-- 项目1卡片 -->
+        <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px; width: 300px; flex: 1 1 300px;">
+            <h3>项目1</h3>
+            <p>描述项目1的内容。</p>
+            <a href="#" style="display:inline-block; padding:6px 16px; background:#4CAF50; color:white; border-radius:4px; text-decoration:none;">查看详情</a>
+        </div>
+        <!-- 项目2卡片 -->
+        <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px; width: 300px; flex: 1 1 300px;">
+            <h3>项目2</h3>
+            <p>描述项目2的内容。</p>
+            <a href="#" style="display:inline-block; padding:6px 16px; background:#4CAF50; color:white; border-radius:4px; text-decoration:none;">查看详情</a>
+        </div>
+        <!-- 项目3卡片 -->
+        <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px; width: 300px; flex: 1 1 300px;">
+            <h3>项目3</h3>
+            <p>描述项目3的内容。</p>
+            <a href="#" style="display:inline-block; padding:6px 16px; background:#4CAF50; color:white; border-radius:4px; text-decoration:none;">查看详情</a>
+        </div>
+        <!-- Mistery学习笔记卡片 -->
+        <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px; width: 300px; flex: 1 1 300px;">
+            <h3>Mistery学习笔记</h3>
+            <img src="mi_learn/output/Mistery_images/image0.webp" alt="Mistery预览" style="width:100%; border-radius:4px; margin-bottom:10px;">
+            <p>学习随笔参考，包含图片和代码，适合初学者阅读。</p>
+            <a href="mi_learn/output/Mistery_with_toc.html" target="_blank" style="display:inline-block; padding:6px 16px; background:#4CAF50; color:white; border-radius:4px; text-decoration:none;">阅读笔记</a>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>如果你想与我联系，可以通过以下方式：</p>
+        <ul>
+            <li>邮箱: example@example.com</li>
+            <li>GitHub: <a href="https://github.com/你的用户名" target="_blank">你的用户名</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 我的个人主页</p>
+</footer>
+
+</body>
+</html>

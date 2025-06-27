@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>欢迎来到我的个人主页</h1>
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系我</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>关于我</h2>
+        <p>你好！我是一名热爱编程和设计的开发者。这里是我的个人主页，展示我的项目和联系信息。</p>
+    </section>
+
+    <section id="projects">
+        <h2>项目</h2>
+        <ul>
+            <li><a href="https://github.com/你的用户名/项目1" target="_blank">项目1</a> - 项目描述</li>
+            <li><a href="https://github.com/你的用户名/项目2" target="_blank">项目2</a> - 项目描述</li>
+            <li><a href="https://github.com/你的用户名/项目3" target="_blank">项目3</a> - 项目描述</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>你可以通过以下方式联系我：</p>
+        <ul>
+            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/你的用户名" target="_blank">你的用户名</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 我的个人主页</p>
+</footer>
+
+</body>
+</html>
