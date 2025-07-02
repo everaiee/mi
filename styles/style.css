@@ -1,93 +1,109 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人主页</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            background: #ffffff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #35424a;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e8ff; /* 淡紫色背景 */
+    color: #555;
+}
 
-<header>
-    <h1>欢迎来到我的个人主页</h1>
-    <nav>
-        <a href="#about">关于我</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系我</a>
-    </nav>
-</header>
+header {
+    background: #a3e4d7; /* 柔和的绿色 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-<div class="container">
-    <section id="about">
-        <h2>关于我</h2>
-        <p>你好！我是一名热爱编程和设计的开发者。这里是我的个人主页，展示我的项目和联系信息。</p>
-    </section>
+nav {
+    margin: 20px 0;
+}
 
-    <section id="projects">
-        <h2>项目</h2>
-        <ul>
-            <li><a href="https://github.com/你的用户名/项目1" target="_blank">项目1</a> - 项目描述</li>
-            <li><a href="https://github.com/你的用户名/项目2" target="_blank">项目2</a> - 项目描述</li>
-            <li><a href="https://github.com/你的用户名/项目3" target="_blank">项目3</a> - 项目描述</li>
-        </ul>
-    </section>
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
-    <section id="contact">
-        <h2>联系我</h2>
-        <p>你可以通过以下方式联系我：</p>
-        <ul>
-            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-            <li>GitHub: <a href="https://github.com/你的用户名" target="_blank">你的用户名</a></li>
-        </ul>
-    </section>
-</div>
+nav a:hover {
+    color: #d2b4de; /* 淡紫色悬停效果 */
+}
 
-<footer>
-    <p>&copy; 2023 我的个人主页</p>
-</footer>
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 
-</body>
-</html>
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px; /* 更圆润的边角，增加柔和感 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); /* 鼠标悬停时向上移动 */
+}
+
+h2 {
+    color: #a3e4d7; /* 柔和的绿色标题 */
+}
+
+a {
+    color: #a3e4d7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d2b4de; /* 淡紫色悬停效果 */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #a3e4d7; /* 柔和的绿色 */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 项目卡片样式 */
+.project-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 300px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* 鼠标悬停时向上移动 */
+}
+
+.project-card h3 {
+    color: #a3e4d7; /* 柔和的绿色标题 */
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #a3e4d7; /* 柔和的绿色按钮 */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+    background: #d2b4de; /* 淡紫色悬停效果 */
+}
